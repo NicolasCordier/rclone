@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jlaffaye/ftp"
+	"github.com/esperlu/ftp"
 	"github.com/rclone/rclone/fs"
 	"github.com/rclone/rclone/fs/accounting"
 	"github.com/rclone/rclone/fs/config"
@@ -179,11 +179,11 @@ If this is set and no password is supplied then rclone will ask for a password
 			Name:    "socks_proxy",
 			Default: "",
 			Help: `Socks 5 proxy host.
-		
+
 Supports the format user:pass@host:port, user@host:port, host:port.
-		
+
 Example:
-		
+
     myUser:myPass@localhost:9005
 `,
 			Advanced: true,
